@@ -10,4 +10,13 @@ Power BI Service ---> stage 5 "For those who use cloud services"<br>
 
 GIGO: Garbage In ---> Garbage Out
 
-there is no any functions for cumulative sales for 6 months
+There is no any DAX functions for cumulative sales for 6 months.
+
+1. Month-to-Date (MTD) Sales
+Use TOTALMTD to calculate cumulative sales from the start of the month to the current date:
+MTD_Sales = TOTALMTD(
+    SUM(SalesData[SalesAmount]),
+    SalesData[Date]
+)
+
+

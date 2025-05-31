@@ -32,3 +32,13 @@ YTD_Sales = TOTALYTD(
     SUM(SalesData[SalesAmount]),
     SalesData[Date]
 )
+
+4. Custom Rolling Cumulative Sales
+If you need rolling cumulative sales over a custom period (e.g., last 12 months), use:
+Rolling_12M_Sales = 
+CALCULATE(
+    SUM(SalesData[SalesAmount]),
+    DATESINPERIOD(SalesData[Date], LASTDATE(SalesData[Date]), -12, MONTH)
+)
+
+5.

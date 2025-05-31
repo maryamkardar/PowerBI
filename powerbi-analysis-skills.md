@@ -8,4 +8,4 @@ Power BI Desktop ---> stages 1 to 4<br>
 Power BI Report Server ---> stage 5 "For those who use servers"<br>
 Power BI Service ---> stage 5 "For those who use cloud services"<br>
 
-
+GIGO: Garbage In ---> Garbage Out

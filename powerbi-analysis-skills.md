@@ -28,3 +28,7 @@ QTD_Sales = TOTALQTD(
 
 3. Year-to-Date (YTD) Sales
 Use TOTALYTD to sum all sales from the start of the year:
+YTD_Sales = TOTALYTD(
+    SUM(SalesData[SalesAmount]),
+    SalesData[Date]
+)

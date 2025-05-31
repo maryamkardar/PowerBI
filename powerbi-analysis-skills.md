@@ -41,4 +41,14 @@ CALCULATE(
     DATESINPERIOD(SalesData[Date], LASTDATE(SalesData[Date]), -12, MONTH)
 )
 
-5.
+5. Running Total Across All Dates
+If you want a running total without resetting per month, quarter, or year:
+Running_Total = 
+CALCULATE(
+    SUM(SalesData[SalesAmount]),
+    FILTER(
+        ALL(SalesData[Date]),
+        SalesData[Date] <= MAX(SalesData[Date])
+    )
+)
+

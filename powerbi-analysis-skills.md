@@ -19,4 +19,12 @@ MTD_Sales = TOTALMTD(
     SalesData[Date]
 )
 
+2. Quarter-to-Date (QTD) Sales
+Use TOTALQTD to compute sales from the beginning of the quarter:
+QTD_Sales = TOTALQTD(
+    SUM(SalesData[SalesAmount]),
+    SalesData[Date]
+)
 
+3. Year-to-Date (YTD) Sales
+Use TOTALYTD to sum all sales from the start of the year:

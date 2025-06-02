@@ -7,11 +7,11 @@ Data Discovery ---> Data Transformation ---> Data Modeling ---> Data Visualizati
 Power BI Desktop ---> stages 1 to 4<br>
 Power BI Report Server ---> stage 5 "For those who use servers"<br>
 Power BI Service ---> stage 5 "For those who use cloud services"<br>
-
+<br>
 GIGO: Garbage In ---> Garbage Out<br>
-
+<br>
 There is no any DAX functions for cumulative sales for 6 months.<br>
-
+<br>
 1. Month-to-Date (MTD) Sales<br>
 Use TOTALMTD to calculate cumulative sales from the start of the month to the current date:<br>
 MTD_Sales = TOTALMTD(<br>
@@ -52,7 +52,7 @@ CALCULATE(<br>
     )<br>
 )<br>
 <br>
-ALL and FILTER functions return a table.<br>
+## ALL and FILTER functions return a table.<br>
 <br>
 If a calculation result is specific, you should import it as an entery data in PBI and don't use DAX Functions.<br> 
 IF data is static and isnot dynamic.<br>

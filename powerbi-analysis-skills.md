@@ -51,9 +51,9 @@ CALCULATE(
         SalesData[Date] <= MAX(SalesData[Date])
     )
 )
-
-ALL and FILTER functions return a table.
-
-If a calculation result is specific, you should import it as an entery data in PBI and don't use DAX Functions. 
-IF data is static and isnot dynamic.
+<br>
+ALL and FILTER functions return a table.<br>
+<br>
+If a calculation result is specific, you should import it as an entery data in PBI and don't use DAX Functions.<br> 
+IF data is static and isnot dynamic.<br>
 

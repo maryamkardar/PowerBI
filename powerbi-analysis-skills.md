@@ -19,20 +19,20 @@ MTD_Sales = TOTALMTD(<br>
     SalesData[Date]<br>
 )<br>
 <br>
-2. Quarter-to-Date (QTD) Sales
-Use TOTALQTD to compute sales from the beginning of the quarter:
-QTD_Sales = TOTALQTD(
-    SUM(SalesData[SalesAmount]),
-    SalesData[Date]
-)
-
-3. Year-to-Date (YTD) Sales
-Use TOTALYTD to sum all sales from the start of the year:
-YTD_Sales = TOTALYTD(
-    SUM(SalesData[SalesAmount]),
-    SalesData[Date]
-)
-
+2. Quarter-to-Date (QTD) Sales<br>
+Use TOTALQTD to compute sales from the beginning of the quarter:<br>
+QTD_Sales = TOTALQTD(<br>
+    SUM(SalesData[SalesAmount]),<br>
+    SalesData[Date]<br>
+)<br>
+<br>
+3. Year-to-Date (YTD) Sales<br>
+Use TOTALYTD to sum all sales from the start of the year:<br>
+YTD_Sales = TOTALYTD(<br>
+    SUM(SalesData[SalesAmount]),<br>
+    SalesData[Date]<br>
+)<br>
+<br>
 4. Custom Rolling Cumulative Sales
 If you need rolling cumulative sales over a custom period (e.g., last 12 months), use:
 Rolling_12M_Sales = 

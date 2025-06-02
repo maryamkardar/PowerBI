@@ -55,3 +55,5 @@ CALCULATE(
 ALL and FILTER functions return a table.
 
 If a calculation result is specific, you should import it as an entery data in PBI and don't use DAX Functions. 
+IF data is static and isnot dynamic.
+

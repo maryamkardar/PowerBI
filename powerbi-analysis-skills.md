@@ -33,24 +33,24 @@ YTD_Sales = TOTALYTD(<br>
     SalesData[Date]<br>
 )<br>
 <br>
-4. Custom Rolling Cumulative Sales
-If you need rolling cumulative sales over a custom period (e.g., last 12 months), use:
-Rolling_12M_Sales = 
-CALCULATE(
-    SUM(SalesData[SalesAmount]),
-    DATESINPERIOD(SalesData[Date], LASTDATE(SalesData[Date]), -12, MONTH)
-)
-
-5. Running Total Across All Dates
-If you want a running total without resetting per month, quarter, or year:
-Running_Total = 
-CALCULATE(
-    SUM(SalesData[SalesAmount]),
-    FILTER(
-        ALL(SalesData[Date]),
-        SalesData[Date] <= MAX(SalesData[Date])
-    )
-)
+4. Custom Rolling Cumulative Sales<br>
+If you need rolling cumulative sales over a custom period (e.g., last 12 months), use:<br>
+Rolling_12M_Sales = <br>
+CALCULATE(<br>
+    SUM(SalesData[SalesAmount]),<br>
+    DATESINPERIOD(SalesData[Date], LASTDATE(SalesData[Date]), -12, MONTH)<br>
+)<br>
+<br>
+5. Running Total Across All Dates<br>
+If you want a running total without resetting per month, quarter, or year:<br>
+Running_Total = <br>
+CALCULATE(<br>
+    SUM(SalesData[SalesAmount]),<br>
+    FILTER(<br>
+        ALL(SalesData[Date]),<br>
+        SalesData[Date] <= MAX(SalesData[Date])<br>
+    )<br>
+)<br>
 <br>
 ALL and FILTER functions return a table.<br>
 <br>

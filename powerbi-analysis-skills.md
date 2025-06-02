@@ -8,17 +8,17 @@ Power BI Desktop ---> stages 1 to 4<br>
 Power BI Report Server ---> stage 5 "For those who use servers"<br>
 Power BI Service ---> stage 5 "For those who use cloud services"<br>
 
-GIGO: Garbage In ---> Garbage Out
+GIGO: Garbage In ---> Garbage Out<br>
 
-There is no any DAX functions for cumulative sales for 6 months.
+There is no any DAX functions for cumulative sales for 6 months.<br>
 
-1. Month-to-Date (MTD) Sales
-Use TOTALMTD to calculate cumulative sales from the start of the month to the current date:
-MTD_Sales = TOTALMTD(
-    SUM(SalesData[SalesAmount]),
-    SalesData[Date]
-)
-
+1. Month-to-Date (MTD) Sales<br>
+Use TOTALMTD to calculate cumulative sales from the start of the month to the current date:<br>
+MTD_Sales = TOTALMTD(<br>
+    SUM(SalesData[SalesAmount]),<br>
+    SalesData[Date]<br>
+)<br>
+<br>
 2. Quarter-to-Date (QTD) Sales
 Use TOTALQTD to compute sales from the beginning of the quarter:
 QTD_Sales = TOTALQTD(

@@ -52,3 +52,4 @@ CALCULATE(
     )
 )
 
+ALL and FILTER functions return a table.

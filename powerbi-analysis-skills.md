@@ -58,3 +58,4 @@ CALCULATE(<br>
 If a calculation result is specific, you should import it as an entery data in PBI and don't use DAX Functions.<br> 
 IF data is static and isnot dynamic.<br>
 
+

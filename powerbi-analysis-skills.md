@@ -8,8 +8,10 @@ Power BI Desktop ---> stages 1 to 4
 Power BI Report Server ---> stage 5 "For those who use servers"<br>
 Power BI Service ---> stage 5 "For those who use cloud services"<br>
 <br>
+
 GIGO: Garbage In ---> Garbage Out<br>
 <br>
+
 There is no any DAX functions for cumulative sales for 6 months.<br>
 <br>
 1. Month-to-Date (MTD) Sales<br>
